@@ -4,7 +4,7 @@
 --    PRIMARY KEY(id)
 --);
 --
---ALTER TABLE alunos ADD fk_frequencia bit;
+--ALTER TABLE alunos ADD fk_frequencia bigint not null auto_increment;
 --
 --ALTER TABLE alunos ADD CONSTRAINT fk_frequencia
 --FOREIGN KEY (fk_frequencia) REFERENCES frequencia(status);
