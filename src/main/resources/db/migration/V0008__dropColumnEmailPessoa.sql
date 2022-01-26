@@ -1,2 +1,0 @@
-ALTER TABLE pessoas
-DROP COLUMN email;

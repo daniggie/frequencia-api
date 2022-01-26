@@ -21,7 +21,7 @@ import javax.validation.groups.Default;
 @Setter
 @Entity
 @Table(name = "pessoas")
-public class Pessoa {
+public class Aluno {
 
     @NotNull(groups = ValidationGroups.ClienteId.class)
     @Id
@@ -30,10 +30,6 @@ public class Pessoa {
 
     @NotBlank
     private String nome;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "usuario_id")
-    private Usuario usuario;
 
     @NotBlank
     @Size(min = 14)

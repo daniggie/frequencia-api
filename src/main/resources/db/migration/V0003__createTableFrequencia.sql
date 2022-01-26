@@ -1,0 +1,11 @@
+--CREATE TABLE frequencia(
+--    id bigint not null auto_increment,
+--    status bit not null,
+--    PRIMARY KEY(id)
+--);
+--
+--ALTER TABLE alunos ADD fk_frequencia bit;
+--
+--ALTER TABLE alunos ADD CONSTRAINT fk_frequencia
+--FOREIGN KEY (fk_frequencia) REFERENCES frequencia(status);
+
