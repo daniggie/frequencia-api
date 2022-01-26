@@ -18,9 +18,9 @@ public class AlunoService {
     private AlunoAssembler alunoAssembler;
 
     @Transactional
-    public Aluno cadastrar(Aluno pessoa){
-        Aluno novaPessoa = alunoRepository.save(pessoa);
-        return novaPessoa;
+    public Aluno cadastrar(Aluno aluno){
+        Aluno novoAluno = alunoRepository.save(aluno);
+        return novoAluno;
     }
 
     public List<AlunoDTO> listar(){

@@ -50,7 +50,6 @@ public class AlunoController {
         return ResponseEntity.ok(alunoAssembler.toModel(aluno));
     }
 
-
     @DeleteMapping("/{alunoId}")
     public ResponseEntity<Aluno> remover(@PathVariable Long alunoId){
         if (!alunoRepository.existsById(alunoId)){
