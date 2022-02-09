@@ -37,8 +37,10 @@ public class AlunoController {
         return alunoService.listar();
     }
 
-    @PutMapping("/editar/{alunoID}")
-    public ResponseEntity<AlunoDTO> editar(@Valid @PathVariable Long alunoID, @RequestBody AlunoInputDTO alunoInputDTO){
+    @PutMapping("/editar/{nomeAluno}")
+    public ResponseEntity<AlunoDTO> editar(@Valid @PathVariable String nomeAluno, @RequestBody AlunoInputDTO alunoInputDTO){
+
+        long alunoID = alunoRepository.findByNome(nomeAluno).get(0).getId();
 
         if (!alunoRepository.existsById(alunoID)){
             return  ResponseEntity.notFound().build();
