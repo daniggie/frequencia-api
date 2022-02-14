@@ -7,5 +7,6 @@ import lombok.Setter;
 @Getter
 public class AlunoDTO {
 
+    private Long id;
     private String nome;
 }
